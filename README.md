@@ -432,7 +432,12 @@ Organization.name : Banco Estado
 Organization.id : CL
 Organization.name : CLARO Chile
 
+#### Eventualmente agregar aqui o en extended fields:
 
+Organization.sub_id
+Organization.sub_name
+
+Para distinguir que sub-organizacion origina o es dueña de la informacion dentro de esa organizacion
 
 
 ## <a name="os"></a> Operating System fields
