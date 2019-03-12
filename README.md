@@ -416,7 +416,7 @@ The organization fields enrich data with information about the company or entity
 
 These fields help you arrange or filter data stored in an index by one or multiple organizations.
 
-### e-contact
+## Especificamente para e-contact 
 Uso como la nomenclatura definida para los servidores de *Banco Estado*, en este caso son 2 campos: organization.name y organization.id  considerando que se trata del **"Cliente final"** y no la organización proveedora del servicio *(e-contact, Recoline, etc...)*
 
 | Field  | Description  | Level  | Type  | Example  |
@@ -424,6 +424,7 @@ Uso como la nomenclatura definida para los servidores de *Banco Estado*, en este
 | <a name="organization.name"></a>organization.name | Organization name. | extended | keyword |  |
 | <a name="organization.id"></a>organization.id | Unique identifier for the organization. | extended | keyword |  |
 
+## Especificamente para e-contact 
 #### ejemplos:
 Organization.id : BE
 Organization.name : Banco Estado
@@ -522,6 +523,16 @@ These fields help you find and correlate logs for a specific service and version
 | <a name="service.state"></a>service.state | Current state of the service. | core | keyword |  |
 | <a name="service.version"></a>service.version | Version of the service the data was collected from.<br/>This allows to look at a data set only for a specific version of a service. | core | keyword | `3.2.4` |
 | <a name="service.ephemeral_id"></a>service.ephemeral_id | Ephemeral identifier of this service (if one exists).<br/>This id normally changes across restarts, but `service.id` does not. | extended | keyword | `8a4f500f` |
+
+## Especificamente para e-contact 
+
+#### Identificadores de servicios (definir)
+1. outbound
+2. inbound
+3. ivr
+4. click to call
+5. derivacion porcentual
+6. tipificacion
 
 
 ## <a name="source"></a> Source fields
