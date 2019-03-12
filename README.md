@@ -83,7 +83,7 @@ ECS defines these fields.
  * [User fields](#user)
  * [User agent fields](#user_agent)
 
-## <a name="base"></a> Base fields
+## <a name="base"></a> Base fields <
 
 The `base` field set contains all fields which are on the top level. These fields are common across all types of events.
 
@@ -95,7 +95,7 @@ The `base` field set contains all fields which are on the top level. These field
 | <a name="labels"></a>labels | Custom key/value pairs.<br/>Can be used to add meta information to events. Should not contain nested objects. All values are stored as keyword.<br/>Example: `docker` and `k8s` labels. | core | object | `{'application': 'foo-bar', 'env': 'production'}` |
 | <a name="message"></a>message | For log events the message field contains the log message, optimized for viewing in a log viewer.<br/>For structured logs without an original message field, other fields can be concatenated to form a human-readable summary of the event.<br/>If multiple messages exist, they can be combined into one message. | core | text | `Hello World` |
 
-## Especificamente para e-contact 
+### Especificamente para e-contact 
 
 #### Tags 
 
@@ -410,13 +410,13 @@ This could be a custom hardware appliance or a server that has been configured t
 | <a name="observer.type"></a>observer.type | The type of the observer the data is coming from.<br/>There is no predefined list of observer types. Some examples are `forwarder`, `firewall`, `ids`, `ips`, `proxy`, `poller`, `sensor`, `APM server`. | core | keyword | `firewall` |
 
 
-## <a name="organization"></a> Organization fields
+## <a name="organization"></a> Organization fields <
 
 The organization fields enrich data with information about the company or entity the data is associated with.
 
 These fields help you arrange or filter data stored in an index by one or multiple organizations.
 
-## Especificamente para e-contact 
+### Especificamente para e-contact 
 Uso como la nomenclatura definida para los servidores de *Banco Estado*, en este caso son 2 campos: organization.name y organization.id  considerando que se trata del **"Cliente final"** y no la organización proveedora del servicio *(e-contact, Recoline, etc...)*
 
 | Field  | Description  | Level  | Type  | Example  |
@@ -508,7 +508,7 @@ Client / server representations can add semantic context to an exchange, which i
 | <a name="server.packets"></a>server.packets | Packets sent from the server to the client. | core | long | `12` |
 
 
-## <a name="service"></a> Service fields
+## <a name="service"></a> Service fields <
 
 The service fields describe the service for or from which the data was collected.
 
@@ -524,7 +524,7 @@ These fields help you find and correlate logs for a specific service and version
 | <a name="service.version"></a>service.version | Version of the service the data was collected from.<br/>This allows to look at a data set only for a specific version of a service. | core | keyword | `3.2.4` |
 | <a name="service.ephemeral_id"></a>service.ephemeral_id | Ephemeral identifier of this service (if one exists).<br/>This id normally changes across restarts, but `service.id` does not. | extended | keyword | `8a4f500f` |
 
-## Especificamente para e-contact 
+### Especificamente para e-contact 
 
 #### Identificadores de servicios (definir)
 1. outbound
@@ -533,6 +533,7 @@ These fields help you find and correlate logs for a specific service and version
 4. click to call
 5. derivacion porcentual
 6. tipificacion
+7. redes sociales
 
 
 ## <a name="source"></a> Source fields
