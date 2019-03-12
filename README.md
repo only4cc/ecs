@@ -95,17 +95,23 @@ The `base` field set contains all fields which are on the top level. These field
 | <a name="labels"></a>labels | Custom key/value pairs.<br/>Can be used to add meta information to events. Should not contain nested objects. All values are stored as keyword.<br/>Example: `docker` and `k8s` labels. | core | object | `{'application': 'foo-bar', 'env': 'production'}` |
 | <a name="message"></a>message | For log events the message field contains the log message, optimized for viewing in a log viewer.<br/>For structured logs without an original message field, other fields can be concatenated to form a human-readable summary of the event.<br/>If multiple messages exist, they can be combined into one message. | core | text | `Hello World` |
 
-**Especificamente para e-contact**
+## Especificamente para e-contact 
 
 #### Tags 
-prod : ambientes de produccion
-qa : ambientes de Control de Calidad
-dev :ambientes de Desarrollo
-lab: ambientes de Laboratorio, Demo, Capacitación
 
-#### Labels 
-proveedor: ( e-contact/ recoline / ... ) es decir la empresa que factura el Servicio o Producto 
 
+#### Labels
+1. proveedor: 
++ e-contact
++ recoline 
+
+*es decir la empresa que **factura** el Servicio o Producto* 
+
+2. ambiente:
++ prod = ambientes de produccion
++ qa = ambientes de Control de Calidad
++ dev = ambientes de Desarrollo
++ lab = ambientes de Laboratorio, Demo, Capacitación
 
 ## <a name="agent"></a> Agent fields
 
