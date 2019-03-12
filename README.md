@@ -410,12 +410,21 @@ The organization fields enrich data with information about the company or entity
 
 These fields help you arrange or filter data stored in an index by one or multiple organizations.
 
-Definición como la nomenclatura de los servidores de *Banco Estado*, en este caso son 2 campos: organization.name y organization.id  considerando que se trata del **"Cliente final"** y no la organización proveedora del servicio *(e-contact, Recoline, etc...)*
+### e-contact
+Uso como la nomenclatura definida para los servidores de *Banco Estado*, en este caso son 2 campos: organization.name y organization.id  considerando que se trata del **"Cliente final"** y no la organización proveedora del servicio *(e-contact, Recoline, etc...)*
 
 | Field  | Description  | Level  | Type  | Example  |
 |---|---|---|---|---|
 | <a name="organization.name"></a>organization.name | Organization name. | extended | keyword |  |
 | <a name="organization.id"></a>organization.id | Unique identifier for the organization. | extended | keyword |  |
+
+#### ejemplos:
+Organization.id : BE
+Organization.name : Banco Estado
+
+Organization.id : CL
+Organization.name : CLARO Chile
+
 
 
 
